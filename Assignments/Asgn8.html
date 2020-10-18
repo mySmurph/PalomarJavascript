@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Assignment 8 - MurphreeS</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="Asgn8.css">
+	<script src="Asgn8.js"></script>
+</head>
+<body>
+
+<h1>Heath Care Exchange - First Draft</h1>
+
+<div id='tabs'>
+	<ul>
+		<li><a href='#t1-SignUp'>Sign Up</a></li>
+		<li><a href='#t2-PickPlan'>Pick a Plan</a></li>
+		<li><a href='#t3-Feel'>How Do You Feel?</a></li>
+	</ul>
+	
+	<div id='t1-SignUp'>
+		<section>
+			<h2>Sign Up</h2>
+				<p>	First Name:<br>
+					<input type='text' id='firstName'><span id='Error_firstName'></span>
+				</p>
+				<p>	Last Name:<br>
+					<input type='text' id='lastName'><span id='Error_lastName'></span>
+				</p>
+				<p>	Start Date:<br>
+					<input type="text" id="startDate"><span id='Error_startDate'></span>
+				</p>
+				<input type='button' value='Create an Account' id='account'>
+				<p id='account_status'></p>
+		</section>
+	</div>
+	
+	<div id='t2-PickPlan'>
+		<section>
+			<section class='draggable'>
+				<div id="draggable-great" class="ui-widget-content" value='Great Plan'><p>Great Plan</p></div>
+				<br>
+				<div id="draggable-poor" class="ui-widget-content" value='Poor Plan'><p>Poor Plan</p></div>
+			</section>
+			<div id="droppable" class="ui-widget-header">
+				<p>Drop your plan here</p>
+			</div>
+		</section>
+	</div>
+	
+	<div id='t3-Feel'>
+		<section>
+			<input type='button' value='Show My Feelings' id='feelings'>
+			<div id="dialog" class="ui-widget-content">
+				<p>How Do You Feel Now?</p>
+			</div>
+		</section>
+	</div>
+</div>
+ 
+</body>
+</html>

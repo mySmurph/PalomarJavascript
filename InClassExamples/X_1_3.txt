@@ -1,0 +1,3 @@
+<section> Defines a section in a document
+<article> Defines an article
+these are separate element tags that can section out a portion of a webpage for effecting

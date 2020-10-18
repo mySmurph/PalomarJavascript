@@ -1,0 +1,17 @@
+#john_list
+{
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 200px;
+	height: auto;
+}
+
+#johntable
+{
+	position: absolute;
+	top: 120px;
+	left: 350px;
+	width: 400px;
+	height: 400px;
+}
